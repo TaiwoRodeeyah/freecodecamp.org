@@ -1,0 +1,148 @@
+body{
+    background-color: white;
+}
+header{
+    width: 95%;
+    /* position: fixed; */
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+    height: 6rem;
+}
+header >a{
+    flex-direction: row;
+    display: flex;
+    /* justify-content: flex-end; */
+}
+#header a{
+    text-decoration: none;
+    color: #000;
+}
+.logo img{
+    width: 65px;
+    height: 30px;
+}
+#nav-bar a{
+    color: black;
+    text-decoration: none;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#head h2:hover{
+    filter: drop-shadow(20px 20px 20px black);
+}
+#head{
+    text-align: center;
+    margin: 20px auto 20px auto;
+}
+#submit{
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 1px solid #f1c40f;
+    border-radius: 2px;
+    background-color: #f1c40f;
+    display: block;
+    width: 12%;
+    height: 1.9rem;
+    margin-left: 560px;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: yellow;
+    border: 1px solid yellow;
+    transition: background-color 2s;
+}
+#email{
+    display: block;
+    width: 20%;
+    height: 1.5rem;
+    margin-left: 500px;
+}
+.grid{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px ;
+}
+.icon img{
+    height: 70px;
+}
+#How_it_works iframe{
+    margin-left:450px;
+    margin-top: 50px ;
+}
+/* .pricing{
+    display: flex;
+    margin-top: 60px;
+    flex-direction: row;
+    justify-content: center;
+} */
+#Pricing{
+    display: flex;
+    margin-top: 60px;
+    flex-direction: row;
+    justify-content: center;
+}
+.shoes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+#shoes{
+    border: 1px solid black;
+    border-bottom:#ddd ;
+    width: 100%;
+    background-color:#ddd ;
+    height: 3rem;
+}
+.shoes label{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.shoes ul{
+    list-style: none;
+}
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+  
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+footer > ul > li {
+    padding: 0 10px;
+
+}
+.footer a{
+    text-decoration: none;
+    color: #000;
+} 
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+#button{
+    color: #000;
+    background-color: white;
+}
+#button:hover{
+    cursor: pointer;
+    background-color: green;
+    transition: background-color 2s;
+}
