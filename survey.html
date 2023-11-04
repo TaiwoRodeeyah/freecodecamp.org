@@ -16,23 +16,23 @@
             <form id="survey-form">
                 <div>
                     <label id="name-label" for="name">Name</label> <br>
-                    <input id="name" type="text" placeholder="Enter your name"> <br>
+                    <input id="name" type="text" placeholder="Enter your name" required> <br>
                 </div>
                 <div>
                     <label id="email-label" for="email">Email</label> <br>
-                    <input type="email" name="email" id="email" placeholder="Enter your Email"> <br>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" required> <br>
                 </div>
                 <div>
                     <label id="number-label" for="number">Age (optional)</label> <br>
-                    <input type="number" name="number" id="number" placeholder="Age"> <br>
+                    <input type="number" name="number" id="number" placeholder="Age" min="1" max="100"> <br>
                 </div>
                 <div>
                     <p>Gender</p> 
-                    <input type="radio" name="Gender" id="Female">
+                    <input type="radio" name="Gender" id="Female" value="Female" checked>
                     <label for="Gender">Female</label>
-                    <input type="radio" name="Gender" id="Male">
+                    <input type="radio" name="Gender" id="Male" value="Male">
                     <label for="Gender">Male</label>
-                    <input type="radio" name="Gender" id="I'd rather not say">
+                    <input type="radio" name="Gender" id="I'd rather not say" value="I'd rather not say">
                     <label for="Gender">I'd rather not say</label> 
                 </div> <br>
                 <div>
@@ -46,52 +46,50 @@
                 </div> <br>
                 <div>
                     <p>Marital Status</p>
-                    <input type="radio" name="MS" id="Married">
+                    <input type="radio" name="MS" id="Married" value="Married">
                     <label for="MS">Married</label>
-                    <input type="radio" name="MS" id="Single">
+                    <input type="radio" name="MS" id="Single" value="Single" checked>
                     <label for="MS">Single</label>
-                    <input type="radio" name="MS" id="Widowed">
+                    <input type="radio" name="MS" id="Widowed" value="Widowed">
                     <label for="MS">Widowed</label>
-                    <input type="radio" name="MS" id="Divorced">
+                    <input type="radio" name="MS" id="Divorced" value="Divorced">
                     <label for="MS">Divorced</label>
                 </div> <br>
                 <div>
                     <p>Would you recommend Scents by T to a friend?</p>
-                    <input type="radio" name="recommend" id="recommend" checked>
+                    <input type="radio" name="recommend" id="Definitely" value="Definitely" checked>
                     <label for="recommend">Definitely</label>
-                    <input type="radio" name="recommend" id="recommend">
+                    <input type="radio" name="recommend" id="Maybe" value="Maybe">
                     <label for="recommend">Maybe</label>
-                    <input type="radio" name="recommend" id="recommend">
+                    <input type="radio" name="recommend" id="Never" value="Never">
                     <label for="recommend">Never</label>
                 </div> <br>
                 <div>
                     <p>How often do you wear perfume?</p>
-                    <input type="checkbox" name="Q" id="Q">
+                    <input type="checkbox" name="Q" id="Q" value="Everyday">
                     <label for="Q">Everyday</label> <br>
-                    <input type="checkbox" name="Q" id="Q">
+                    <input type="checkbox" name="Q" id="Q" value="Only when I have a party">
                     <label for="Q">Only when I have a party</label> <br>
-                    <input type="checkbox" name="Q" id="Q">
+                    <input type="checkbox" name="Q" id="Q" value="Others">
                     <label for="Q">Others</label>
                 </div> <br>
                 <div>
                     <p>How much are you willing to spend on perfume?</p>
-                    <input type="checkbox" name="amount" id="amount">
+                    <input type="checkbox" name="amount" id="amount" value="#10,000-#20,000">
                     <label for="amount">#10,000-#20,000</label>
-                    <input type="checkbox" name="amount" id="amount">
+                    <input type="checkbox" name="amount" id="amount" value="#20,000-#30,00">
                     <label for="amount">#20,000-#30,000</label>
-                    <input type="checkbox" name="amount" id="amount">
+                    <input type="checkbox" name="amount" id="amount" value="#30,000-#40,000">
                     <label for="amount">#30,000-#40,000</label>
-                    <input type="checkbox" name="amount" id="amount">
+                    <input type="checkbox" name="amount" id="amount" value="#40,000 and above">
                     <label for="amount">#40,000 and above</label>
                 </div> <br>
                 <div>
-                    <p>Any comments or suggestions?</p>
-                    <input id="comment" type="text" placeholder="Enter your comment here..."> <br>
+                    <label for="comment">Any comments or suggestion?</label>
+                    <textarea name="comment" id="comment" cols="20" rows="5" placeholder="Enter your comment..."></textarea>
                 </div>
+                <input type="submit" value="submit" id="submit">
             </form>
-            <div>
-                <button id="submit"> submit </button>
-            </div>
         </div>
     </div>
 </body>

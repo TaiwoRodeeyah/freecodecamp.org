@@ -27,11 +27,12 @@ body{
     cursor: pointer;
     color: black;
     background-color: green;
+    border: 1px solid green;
     transition: background-color 4s;
 }
 #submit{
     display: block;
-    width: 100%;
+    width: 90%;
     padding: 0.65rem;
     color: black;
     font-size: medium;
@@ -69,7 +70,4 @@ body{
 }
 #survey-form{
     margin-left: 5%;
-}
-#name-label{
-    margin-top: 50%;
 }
